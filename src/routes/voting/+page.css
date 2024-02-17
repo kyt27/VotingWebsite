@@ -1,0 +1,90 @@
+body {
+    background-color: wheat;
+    color: black;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.box {
+    width: 100%;
+    height: fit-content;
+    /* border: 1px solid #000; /* Optional: Add a border for visibility */
+    box-sizing: border-box;
+}
+
+#title-content {
+    height: fit-content;
+    width: 100%;
+    position: relative;
+    max-height: 300px;
+}
+
+#title-content img {
+    position: absolute;
+    height: 11vh;
+    width: auto;
+    top: 0px;
+    right: 0px;
+    padding: 0.5vh;
+}
+
+#title-content h1 {
+    text-align: center;
+    align-items: center;
+    overflow-wrap: break-word;
+    max-width: 70%;
+    margin: 0 auto; 
+    font-size: 3.5vh;
+    font-family: "Georgia";
+    padding: 15px 13vh;
+}
+
+#page-content p {
+    text-align: center;
+}
+
+.poll {
+    width: 400px;
+    padding: 1.5rem;
+    margin: 50px;
+    font-family: sans-serif;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+
+.poll__title {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.poll__option:hover {
+    cursor: pointer;
+}
+
+.poll__option:not(:last-child) {
+    margin-bottom: 0.5rem;
+}
+
+.poll__option--selected .poll__option-fill {
+    background: #009578;
+}
+
+.poll__option-fill {
+    width: 50%;
+    height: 10px;
+    background: #dddddd;
+}
+
+.poll__option-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    font-size: 0.85rem; 
+}
